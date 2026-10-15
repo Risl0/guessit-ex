@@ -10,11 +10,11 @@ const PORT = 3000;
 // The URL used to connect to the PostgreSQL database. It has the shape
 // postgresql://USER:PASSWORD@HOST:PORT/DATABASE. Change the password to match
 // the one you set when you ran schema.sql.
-const DATABASE_URL = 'postgresql://guessit:change-me-now@localhost:5432/guessit';
+const DATABASE_URL = 'postgresql://guessit:158b2171b13c62ed05d00c4afebf1bc4@localhost:5432/guessit';
 
 // The colour used for the page's accent (buttons, title). Change it if you
 // like a different look.
-const ACCENT_COLOR = '#6c3ce9';
+const ACCENT_COLOR = '#175504';
 
 // How long a game stays playable after it is created. Once it is older than
 // this, the game can no longer be viewed, guessed or given up. See "Game

@@ -16,7 +16,7 @@
 --
 --   postgresql://guessit:pass%20word@localhost:5432/guessit
 
-CREATE USER guessit WITH PASSWORD 'change-me-now';
+CREATE USER guessit WITH PASSWORD '158b2171b13c62ed05d00c4afebf1bc4';
 
 CREATE DATABASE guessit OWNER guessit;
 
@@ -24,12 +24,12 @@ CREATE DATABASE guessit OWNER guessit;
 \connect guessit
 
 CREATE TABLE game (
-  id         TEXT PRIMARY KEY,
-  name       TEXT NOT NULL,
-  secret     INTEGER NOT NULL,
-  attempts   INTEGER NOT NULL DEFAULT 0,
-  found_at   TIMESTAMPTZ,
-  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    id TEXT PRIMARY KEY,
+    name TEXT NOT NULL,
+    secret INTEGER NOT NULL,
+    attempts INTEGER NOT NULL DEFAULT 0,
+    found_at TIMESTAMPTZ,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW ()
 );
 
 ALTER TABLE game OWNER TO guessit;
